@@ -211,6 +211,12 @@ void PID::SetControllerDirection(int Direction)
    controllerDirection = Direction;
 }
 
+void PID::ChangeSetpoint(double* Setpoint)
+{
+    mySetpoint = Setpoint;
+
+}
+
 /* Status Funcions*************************************************************
  * Just because you set the Kp=-1 doesn't mean it actually happened.  these
  * functions query the internal state of the PID.  they're here for display
